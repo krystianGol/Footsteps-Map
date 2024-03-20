@@ -1,9 +1,15 @@
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
 const port = 3000;
+const dataBaseName = process.env.DataBaseName;
+const dataBasePassword = process.env.DataBasePassword;
+const dataBasePort = process.env.DataBasePort;
 
 let visited_countries = [];
 let countries_codes = [];
@@ -11,9 +17,9 @@ let countries_codes = [];
 const db = new pg.Client({
   user: "postgres",
   host: "localhost",
-  database: "world",
-  password: "db1234",
-  port: 5432
+  database: dataBaseName,
+  password: dataBasePassword,
+  port: dataBasePort
 });
 
 db.connect();
