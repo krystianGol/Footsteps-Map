@@ -1,9 +1,9 @@
-## Track your global adventures with FootstepsMap
+## Track your global adventures with FootstepsMap 🗺️
 This web app allows you mark visited countries by typing them in input field.
 <br />
 <br />
 
-## FootstepsMap
+## FootstepsMap 👇
 ![image](https://github.com/krystianGol/footsteps-map/assets/96664023/66e0c85c-0fe3-4cb2-b323-edf8232b1ac2)
 <br />
 <br />
